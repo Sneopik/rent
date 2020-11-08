@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="modal-form">
+        <form action="">
+            <span class="close">&times;</span>
+            <input type="text" class="modal-form-inner" pattern="^[a-zA-Z]{2,30}$" id="contactName" name="name" required
+                placeholder="Ваше ФИО">
+            <input type="email" class="modal-form-inner" id="contactEmail" name="email" required placeholder="Email">
+            <input type="tel" class="modal-form-inner" minlength="9" id="contactPhone" pattern='^[0-9\+]{9,15}$'
+                name="phone" required placeholder="Мобильный телефон">
+            <textarea name="message" id="contactMessage" cols="30" rows="10"></textarea>
+            <button type="submit" name="send_btn" id="contactBtn">Отправить</button>
+        </form>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="##" class="logo">
+                    <span>Rent.</span>
+                </a>
+            </div>
+            <div class="navbar-btns">
+                <div class="navbar-lang">
+                    <a href="##">En</a>
+                    <a href="##">Ru</a>
+                </div>
+                <div>
+                    <a href="##" class="navbar-btn">Связь с нами</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="info-section">
+        <div class="section-head">
+            <span class="section-name">Аренда апартаментов по всему миру</span>
+        </div>
+        <div class="info-items">
+            <div class="info-item">
+                <span>Аренда квартир посуточно</span>
+            </div>
+            <div class="info-item">
+                <span>Аренда домов <br>на долгосрочный период</span>
+            </div>
+            <div class="info-item">
+                <span>Аренда домов посуточно</span>
+            </div>
+        </div>
+        <div class="info-advantages">
+            <div class="advantages-item">
+                <picture>
+                    <img src="./images/home.png" alt="Home" loading='lazy' width="140px" height="120px">
+                </picture>
+                <span>Сдаем более 30000 квартир и домов</span>
+            </div>
+            <div class="advantages-item">
+                <picture>
+                    <img src="./images/globe.png" alt="Globe" loading='lazy' width="140px" height="120px">
+                </picture>
+                <span>Работаем более чем в 100 странах по всему миру</span>
+            </div>
+            <div class="advantages-item">
+                <picture>
+                    <img src="./images/like.png" alt="Like" loading='lazy' width="140px" height="120px">
+                </picture>
+                <span>Все арендодатели проверены и надежны</span>
+            </div>
+            <div class="advantages-item">
+                <picture>
+                    <img src="./images/gift.png" alt="Gift" loading='lazy' width="140px" height="120px">
+                </picture>
+                <span>Различные акции и скидки</span>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="section-head about-head">
+            <span>Информация о нашем сервисе</span>
+        </div>
+        <div class="container">
+            <div class="container-item">
+                <picture>
+                    <source media="(max-width: 765px)" srcset="./images/payment_phone.jpg">
+                    <img src="./images/comp.jpg" srcset="./images/retina/comp2x.jpg 2x" alt="Computer" loading='lazy'>
+                </picture>
+                <div class="container-text">
+                    <h2>Как можно произвести оплату?</h2>
+                    <span>
+                        У Вас есть возможность оплатить данную услугу
+                        как наличными, так и безналичным способом. Наш сервис
+                        обеспечит вас жильем в лучшем виде.
+                    </span>
+                </div>
+            </div>
+
+            <hr style="background-color: black; height: 1px; width: 100%; margin-bottom: 15px;">
+            <div class="container-item">
+                <div class="container-text">
+                    <h2>Во сколько происходит заселение?</h2>
+                    <span>
+                        Заселится возможно в любое удобное для вас время, с учетом
+                        заранее произведенной брони. Однако, если апартаменты
+                        сняты на сутки, выселятся следует не позднее 12 утра
+                        следующего дня.
+                    </span>
+                </div>
+                <picture>
+                    <source media="(max-width: 765px)" srcset="./images/clock_phone.jpg">
+                    <img src="./images/clock.jpg" srcset="./images/retina/clock2x.jpg 2x" alt="Clock" loading='lazy'>
+                </picture>
+            </div>
+            <hr style="background-color: black; height: 1px; width: 100%; margin-bottom: 15px;">
+            <div class="container-item">
+                <picture>
+                    <source media="(max-width: 765px)" srcset="./images/apartments_phone.jpg">
+                    <img src="./images/interior.jpg" srcset="./images/retina/interior2x.jpg 2x" alt="Interior"
+                        loading='lazy'>
+                </picture>
+                <div class="container-text">
+                    <h2>Как забронировать апартаменты?</h2>
+                    <span>
+                        Бронь можно осущесвить на нашем сайте, также связавшись с
+                        нами по телефону. Или же очно в нашем офисе. Наши
+                        сотрудники помогут выбрать вам идеально подходящие
+                        апартаменты.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <span class="logo" id="footerLogo">Rent.</span>
+        </div>
+        <div class="footer-contacts">
+            <h2>Контакты</h2>
+            <span>Телефон: 8 (044) 512-25-15<br>
+                Email: rent365@gmail.com<br>
+                Главный офис: г.Минск, пр-Независимости, 44</span>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
